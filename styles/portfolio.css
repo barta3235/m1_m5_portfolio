@@ -235,3 +235,83 @@ textarea{
     border: 0;
     width: 100%;
 }
+
+
+.hide{
+    display: none;
+}
+
+/* responsive styles */
+
+/* mobile devices */
+
+@media screen and (max-width:576px){
+
+    .header{
+        background-image: none;
+    }
+
+    .skills-container, .resume-container, footer,  
+    .about-info-container, .banner, nav, nav>ul{
+        flex-direction: column;
+    }
+
+    #what-i-do-description{
+        padding: 20px
+    }
+    
+    .resume-container{
+        padding-left:20px ;
+        padding-right: 20px;
+    }
+    
+    footer{
+        padding: 10px;
+    }
+
+    .footer-column{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact input[type="text"], .contact input[type="email"],
+    textarea{
+           width: 80%;
+    }
+
+    .about{
+        text-align: justify;
+        padding: 20px;
+    }
+
+    .banner .profile-pic{
+        width: 100%;
+    }
+
+    .banner{
+        padding: 20px;
+    }
+
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+
+    nav>ul{
+        gap: 20px;
+    }
+
+    
+
+
+   
+}
+
+@media screen and (min-width:576px) and (max-width:960px){
+    footer{
+        padding: 30px;
+    }
+
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+}
